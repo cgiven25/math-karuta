@@ -1,0 +1,124 @@
+body
+{
+	background-image: url("/tatami.png");
+}
+
+#top_wrapper
+{
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	text-align: center;
+}
+
+
+#p1_nameplate
+{
+	margin-top: 10px;
+	vertical-align: middle;
+	border: 3px solid black;
+	background: white;
+	display: inline-block;
+	padding: 10px;
+}
+
+#reader
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
+	width: 50%;
+	border: 3px solid green;
+	text-align: center;
+	background-color: white;
+	padding: 0px 15px 0px 15px;
+}
+
+#status
+{
+	vertical-align: middle;
+}
+
+#volume
+{
+	vertical-align: middle;
+}
+
+#memorization_end
+{
+	
+}
+
+#mem_end_votes
+{
+	margin-top: 5px;
+}
+
+#bottom_wrapper
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+#p2_board
+{
+	position: relative;
+}
+
+#p2_nameplate
+{
+	margin-bottom: 20px;
+	vertical-align: middle;
+	border: 3px solid black;
+	background: white;
+	display: inline-block;
+	padding: 10px;
+}
+
+.board_row
+{
+	display: inline-block;
+}
+
+.card
+{
+	background: #ffffff;
+	border: 3px solid green;
+	border-radius: 4px;
+	font-size: 24px;
+	height: 99px;
+	width: 66px;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.card:focus
+{
+	outline: 0;
+}
+
+.blank_card
+{
+	opacity: 0;
+	height: 99px;
+	width: 66px;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+.blank_card:focus
+{
+	outline: 0;
+}

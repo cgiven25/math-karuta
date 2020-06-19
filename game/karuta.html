@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Karuta</title>
+		<link rel="stylesheet" href="karuta.css"></link>
+	</head>
+	<audio id="music" src="animal_crossing.mp3"></audio>
+	<body>
+		<div id="top_wrapper">
+			<div id="p1_board">
+				<div class="board_row" id="p1_board_row_1"></div>
+				<br>
+				<div class="board_row" id="p1_board_row_2"></div>
+				<br>
+				<div class="board_row" id="p1_board_row_3"></div>
+			</div>
+			<div id="p1_nameplate"></div>
+		</div>
+		
+		<div id="reader">
+			<p id="status">Waiting for both players to be seated...</p>
+			<p id="volume">Up and down arrows control volume of music.</p>
+			<div id="memorization" style="display: none;">
+				<input type="button" id="memorization_end" value="End memorization early"></input>
+				<p id="mem_end_votes">(Votes: 0/2)</p>
+			</div>
+		</div>
+
+		<div id="bottom_wrapper">
+			<div id="p2_nameplate"></div>
+			<div id="p2_board">
+				<div class="board_row" id="p2_board_row_1"></div>
+				<br>
+				<div class="board_row" id="p2_board_row_2"></div>
+				<br>
+				<div class="board_row" id="p2_board_row_3"></div>
+			</div>
+		</div>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="karuta.js"></script>
+</html>
